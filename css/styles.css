@@ -9,6 +9,7 @@
   --accent-color: #2196f3;
   --primary-white-color: #ffffff;
   --button-color: #188ce8;
+  --button-color-portfolio: #f5f4fa;
 }
 
 body {
@@ -169,6 +170,15 @@ body {
 
 .button {
   cursor: pointer;
+}
+
+.section-filter .button {
+  background-color: var(--button-color-portfolio);
+}
+
+.section-filter .button:hover,
+.section-filter .button:focus {
+  background-color: var(--accent-color);
 }
 
 .projects a {
