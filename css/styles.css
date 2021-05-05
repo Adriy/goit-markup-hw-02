@@ -8,42 +8,23 @@
   --title-text-color: #212121;
   --accent-color: #2196f3;
   --primary-white-color: #ffffff;
-  --filter-portfolio: #f5f4fa;
+  --button-color: #188ce8;
 }
-/* 
-h3,
-p {
-  margin-top: 0;
-  margin-bottom: 0;
-} */
+
 body {
   font-family: roboto, sans-serif;
   color: var(--primary-text-color);
   background-color: var(--primary-white-color);
   letter-spacing: 0.03em;
+  margin: 0;
 }
 
 .list {
   list-style: none;
-  margin-top: 0;
-  margin-bottom: 0;
 }
 .address {
   font-style: normal;
 }
-
-/* контейнер */
-.container {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: 0 auto;
-  outline: 2px solid tomato;
-}
-
-/* .page-header {
-  background-color: yellowgreen;
-} */
 
 /* логотип */
 .logo {
@@ -93,9 +74,6 @@ body {
 }
 
 /* Герой */
-.hero {
-  text-align: center;
-}
 
 .hero-text {
   color: var(--primary-white-color);
@@ -109,9 +87,8 @@ body {
 }
 
 .hero .button {
-  padding: 10px 32px;
-  text-align: center;
   color: var(--primary-white-color);
+  background-color: var(--accent-color);
   font-family: inherit;
   font-weight: bold;
   font-size: 16px;
@@ -119,10 +96,15 @@ body {
   letter-spacing: 0.06em;
 }
 
-/* наші переваги */
+.hero .button:hover,
+.heri .button:focus {
+  background-color: var(--button-color);
+}
 
+/* наші переваги */
 .advantages .title {
   color: var(--title-text-color);
+
   font-weight: bold;
   font-size: 14px;
   line-height: 1.14;
@@ -141,14 +123,7 @@ body {
   text-align: center;
 }
 
-/* чим ми займаємось */
-
 /* наша команда */
-.team .text {
-  margin-top: 0;
-  margin-bottom: 30px;
-}
-
 .team .title,
 .team .text {
   color: var(--title-text-color);
@@ -184,21 +159,12 @@ body {
 
 /* Portfolio */
 .section-filter .button {
-  padding: 6px 22px;
-  text-align: center;
   font-family: inherit;
   color: var(--title-text-color);
-  background-color: var(--filter-portfolio);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
   letter-spacing: inherit;
-}
-
-.section-filter .button:hover,
-.section-filter .button:focus {
-  color: var(--primary-white-color);
-  background-color: var(--accent-color);
 }
 
 .button {
